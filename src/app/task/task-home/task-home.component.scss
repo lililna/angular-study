@@ -5,14 +5,14 @@
     z-index: 998;
 }
 .task-lists {
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 1px solid #ff0000;
+    border-top: 1px solid #ff0000;
     app-task-list {
-        border: 1px solid #dddddd;
-        margin-right: 10px;
+        border-right: 1px solid #dddddd;
     }
 }
 .list-container {
