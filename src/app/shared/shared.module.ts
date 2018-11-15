@@ -15,7 +15,8 @@ import {
   MdTooltipModule,
   MdDatepickerModule,
   MdRadioModule,
-  MdNativeDateModule
+  MdNativeDateModule,
+  MdSelectModule
  } from '@angular/material';
 
 
@@ -36,7 +37,8 @@ import {
     MdTooltipModule,
     MdDatepickerModule,
     MdNativeDateModule,
-    MdRadioModule
+    MdRadioModule,
+    MdSelectModule
   ],
   exports: [
     CommonModule,
@@ -54,7 +56,8 @@ import {
     MdTooltipModule,
     MdDatepickerModule,
     MdNativeDateModule,
-    MdRadioModule
+    MdRadioModule,
+    MdSelectModule
   ],
   declarations: []
 })
