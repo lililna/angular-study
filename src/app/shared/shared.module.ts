@@ -6,7 +6,11 @@ import {
   MdButtonModule,
   MdCardModule,
   MdInputModule,
-  MdListModule
+  MdListModule,
+  MdGridListModule,
+  MdDialogModule,
+  MdAutocompleteModule,
+  MdMenuModule
  } from '@angular/material';
 
 
@@ -18,7 +22,11 @@ import {
     MdButtonModule,
     MdCardModule,
     MdInputModule,
-    MdListModule
+    MdListModule,
+    MdGridListModule,
+    MdDialogModule,
+    MdAutocompleteModule,
+    MdMenuModule
   ],
   exports: [
     CommonModule,
@@ -27,7 +35,11 @@ import {
     MdButtonModule,
     MdCardModule,
     MdInputModule,
-    MdListModule
+    MdListModule,
+    MdGridListModule,
+    MdDialogModule,
+    MdAutocompleteModule,
+    MdMenuModule
   ],
   declarations: []
 })
