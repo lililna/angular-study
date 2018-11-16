@@ -35,7 +35,7 @@ export class ProjectListComponent implements OnInit {
     //this.dialog.open(NewProjectComponent,{position:{left: "0", top: "0"}});
     // 数据
     //this.dialog.open(NewProjectComponent,{data:"This is my data"});
-    const dialogRef = this.dialog.open(NewProjectComponent,{data:{dark: false}});
+    const dialogRef = this.dialog.open(NewProjectComponent,{data:{title: '新增项目'}});
     dialogRef.afterClosed().subscribe(result => {
       console.log(result);
     })
@@ -43,6 +43,10 @@ export class ProjectListComponent implements OnInit {
 
   launchInviteDialog() {
     this.dialog.open(InviteComponent);
+  }
+
+  launchEditDialog() {
+    const dialogRef = this.dialog.open(NewProjectComponent, {data: {title: '编辑项目'}});
   }
 
 }
