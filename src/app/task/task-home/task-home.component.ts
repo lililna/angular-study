@@ -1,3 +1,4 @@
+import { ConfirmDialogComponent } from './../../shared/confirm-dialog/confirm-dialog.component';
 import { CopyTaskComponent } from './../copy-task/copy-task.component';
 import { MdDialog } from '@angular/material';
 import { Component, OnInit } from '@angular/core';
@@ -89,6 +90,13 @@ export class TaskHomeComponent implements OnInit {
 
   launchUpdateDialog(task) {
     const dialogRef = this.dialog.open(NewTaskComponent, {data: {title: "修改任务", task: task}});
+  }
+
+  launchDelDialog() {
+    const dialogRef = this.dialog.open(ConfirmDialogComponent, {data:{title: '删除任务列表', content: '您确定删除该任务列表吗？'}});
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(result);
+    })
   }
 
 }
