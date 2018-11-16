@@ -7,7 +7,8 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
 import { HttpModule } from '@angular/http';
-import { loadSvgResources } from '../utils/svg.util'
+import { loadSvgResources } from '../utils/svg.util';
+import 'hammerjs';
 
 @NgModule({
   imports: [
