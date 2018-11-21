@@ -9,9 +9,10 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   animations:[
     trigger('square', 
       [
-        state('green', style({'background-color':'green'})),
-        state('red', style({'background-color': 'red'})),
-        transition('green => red', animate(1000))
+        state('green', style({'background-color':'green', 'height':'100px', 'transform':'translateY(-100%)'})),
+        state('red', style({'background-color': 'red', 'height':'100px', 'transform':'translateY(100%)'})),
+        transition('green => red', animate('5s ease-in')),
+        transition('red => green', animate('8s ease-out'))
       ]
     )
   ]
