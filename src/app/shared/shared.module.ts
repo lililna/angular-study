@@ -1,3 +1,4 @@
+import { DirectiveModule } from './../directive/directive.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { 
@@ -41,7 +42,8 @@ import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.componen
     MdNativeDateModule,
     MdRadioModule,
     MdSelectModule,
-    MdSidenavModule
+    MdSidenavModule,
+    DirectiveModule
   ],
   exports: [
     CommonModule,
@@ -61,7 +63,8 @@ import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.componen
     MdNativeDateModule,
     MdRadioModule,
     MdSelectModule,
-    MdSidenavModule
+    MdSidenavModule,
+    DirectiveModule
   ],
   entryComponents: [
     ConfirmDialogComponent
