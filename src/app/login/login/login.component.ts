@@ -24,6 +24,7 @@ export class LoginComponent implements OnInit {
     ev.preventDefault();
     console.log(JSON.stringify(value));
     console.log(JSON.stringify(valid));
+    //this.form.controls['email'].setValidators(this.validata);
   }
 
   validata(c: FormControl): {[key:string]: any} {
