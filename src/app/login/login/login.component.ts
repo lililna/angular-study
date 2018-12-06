@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
     //   password: new FormControl('', Validators.required)
     // })
     this.form = this.fb.group({
-      email: ['li@163.com',Validators.compose([Validators.required, Validators.email])],
+      email: ['li@163.com',Validators.compose([Validators.required, Validators.email, this.validata])],
       password: ['', Validators.required]
     })
   }
@@ -24,6 +24,19 @@ export class LoginComponent implements OnInit {
     ev.preventDefault();
     console.log(JSON.stringify(value));
     console.log(JSON.stringify(valid));
+  }
+
+  validata(c: FormControl): {[key:string]: any} {
+    if(!c.value) {
+      return null;
+    }
+    const pattern = /^li+/;
+    if(pattern.test(c.value)) {
+      return null;
+    }
+    return {
+      emailNotValid: 'The email must start with wang'
+    }
   }
 
 }
