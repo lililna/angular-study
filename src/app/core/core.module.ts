@@ -1,3 +1,4 @@
+import { ServicesModule } from './../services/services.module';
 import { SharedModule } from '../shared/shared.module';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
@@ -17,6 +18,7 @@ import 'rxjs/add/operator/take';
     HttpModule,
     SharedModule,
     AppRoutingModule,
+    ServicesModule.forRoot(),
     BrowserAnimationsModule,
   ],
   declarations: [
