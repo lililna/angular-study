@@ -32,6 +32,7 @@ export class ImageListSelectComponent implements ControlValueAccessor {
   
   onChange(i) {
     this.selected = this.items[i];
+    this.propagateChange(this.selected);
   }
 
   writeValue(obj: any): void{
