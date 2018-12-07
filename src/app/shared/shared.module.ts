@@ -1,6 +1,9 @@
+import { ImageListSelectComponent } from './image-list-select/image-list-select.component';
 import { DirectiveModule } from './../directive/directive.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { 
   MdToolbarModule, 
   MdIconModule, 
@@ -20,9 +23,6 @@ import {
   MdSelectModule,
   MdSidenavModule
  } from '@angular/material';
-import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 
 @NgModule({
   imports: [
@@ -69,11 +69,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MdSidenavModule,
     DirectiveModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ImageListSelectComponent
   ],
   entryComponents: [
     ConfirmDialogComponent
   ],
-  declarations: [ConfirmDialogComponent]
+  declarations: [
+    ConfirmDialogComponent, 
+    ImageListSelectComponent
+  ]
 })
 export class SharedModule { }
