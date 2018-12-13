@@ -24,12 +24,12 @@
         每日佳句
       </md-card-title>
       <md-card-subtitle>
-        满足感在于不断的努力，而不是现有的成就。全心努力定会信心满满。
+        {{quote.cn}}
       </md-card-subtitle>
     </md-card-header>
-    <img md-card-image src="/assets/images/1.jpg" alt="">
+    <img md-card-image [src]="quote.pic" alt="quote image">
     <md-card-content>
-      Satisfaction lies in the effort,not in the attainment.Full effort is victory.
+      {{quote.en}}
     </md-card-content>
   </md-card>
 </form>

@@ -1,0 +1,40 @@
+{
+    "quotes": [
+        {
+            "id": "1",
+            "cn": "最大的挑战和突破在于用人，而用人最大的突破在于信任人。",
+            "en": "Do one thing at a time, and do well.",
+            "pic": "/assets/images/quotes/1.jpg"
+        },
+        {
+            "id": "2",
+            "cn": "重复别人所说的话，只需要教育；而要挑战别人所说的话，则需要头脑。",
+            "en": "Whatever is worth doing is worth doing well.",
+            "pic": "/assets/images/quotes/2.jpg"
+        },
+        {
+            "id": "3",
+            "cn": "今天应做的事没有做，明天再早也是耽误了。",
+            "en": "Never put off what you can do today until tomorrow.",
+            "pic": "/assets/images/quotes/3.jpg"
+        },
+        {
+            "id": "4",
+            "cn": "决定一个人的一生，以及整个命运的，只是一瞬之间。",
+            "en": "Action speak louder than words.",
+            "pic": "/assets/images/quotes/4.jpg"
+        },
+        {
+            "id": "5",
+            "cn": "坚强的信心，能使平凡的人做出惊人的事业。",
+            "en": "Knowledge makes humble, ignorance makes proud.",
+            "pic": "/assets/images/quotes/5.jpg"
+        },
+        {
+            "id": "6",
+            "cn": "故立志者，为学之心也；为学者，立志之事也。",
+            "en": "Judge not from appearances.",
+            "pic": "/assets/images/quotes/6.jpg"
+        }
+    ]
+}
