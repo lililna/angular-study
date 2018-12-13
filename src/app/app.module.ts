@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
+import { SelfCodeModule } from './self-code/self-code.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SharedModule } from './shared/shared.module';
     CoreModule,
     LoginModule,
     ProjectModule,
-    TaskModule
+    TaskModule,
+    SelfCodeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

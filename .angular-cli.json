@@ -21,7 +21,11 @@
       "styles": [
         "styles.scss"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.js",
+        "app/self-code/js/jquery.gallery.js",
+        "app/self-code/js/modernizr.custom.53451.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
